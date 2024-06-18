@@ -21,7 +21,7 @@
                     <th colspan= "3">Ações</th>
                 </tr>
             </thead>
-        </table>
+        
         <tbody>
             <?php
             include "conexao.php";
@@ -37,18 +37,23 @@
                     <td><?php echo $jogos['plataformas'] ?></td>
                     <td><a class="botao-editar" href="editar.php?id=<?php echo $produtos['id'] ?>">Editar</a></td>
                     <td>
+                        <form>
                         <a href="excluir.php?id=<?php echo $produtos['id'] ?>">
                         <input type="button" class="botao-excluir" value="excluir">
                         </a>
-                        
+                        </form>
                     </td>
                 </tr>
 
+                <?php
+                endwhile;
+                ?>
 
         </tbody>
+        </table>
+        <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
+        
     </section>
-
-
 </main>   
 </body>
 </html>
