@@ -7,7 +7,7 @@
             <form method="post" enctype="multipart/form-data" action="salvar.php">
 
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="jogo" placeholder="Nome de um jogo" required>
+                <input type="text" id="nome" name="nome" placeholder="Nome de um jogo" required>
                 <div class="container-plataformas">
                     <div>
                         <label for="xbox">

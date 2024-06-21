@@ -34,7 +34,6 @@
                 <tr>
                     <td><?php echo $jogos['nome'] ?></td>
                     <td><?php echo $jogos['banner'] ?></td>
-                    <td><?php echo $jogos['plataformas'] ?></td>
                     <td><a class="botao-editar" href="editar.php?id=<?php echo $produtos['id'] ?>">Editar</a></td>
                     <td>
                         <form>
