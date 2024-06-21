@@ -1,6 +1,6 @@
 <?php include "cabecalho.php" ?>
 
-<img class="img-fluid" src="imagens/death stranding.webp" alt="">
+<img class="banner" src="imagens/death stranding.webp" alt="">
 
 <h1>Death Stranding</h1>       
 

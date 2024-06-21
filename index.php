@@ -6,6 +6,10 @@
 
 <h3>jogos, games e juegos</h3>
 
-<a href=""><img class="img-fluid" src="imagens/death stranding.webp" alt=""></a>
+<div class="jogos">
+    <div class="card-jogos">
+        <a href=""><img src="imagens/death stranding.webp" alt=""></a>
+    </div>
+</div>
 
 <?php include "rodape.php" ?>
