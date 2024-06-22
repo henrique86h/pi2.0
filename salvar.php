@@ -9,7 +9,7 @@ $pc = $_POST['pc'];
 
 $banner = $_FILES["banner"]["name"];
 $tempname = $_FILES["banner"]["tmp_name"];
-$folder = "./img" . $banner;
+$pasta = "./img" . $banner;
 
 
 include "conexao.php";
