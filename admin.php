@@ -17,7 +17,7 @@
                 <tr>
                     <th>Nome</th>
                     <th>Banner</th>
-                    <th>Plataformas</th>
+                    <th colspan= "4">Plataformas</th>
                     <th colspan= "3">Ações</th>
                 </tr>
             </thead>
@@ -30,14 +30,17 @@
             
             while ($jogos = mysqli_fetch_assoc($resultado)):
             ?>
-
                 <tr>
                     <td><?php echo $jogos['nome'] ?></td>
                     <td><?php echo $jogos['banner'] ?></td>
-                    <td><a class="botao-editar" href="editar.php?id=<?php echo $produtos['id'] ?>">Editar</a></td>
+                    <td><?php echo $jogos['xbox'] ?></td>
+                    <td><?php echo $jogos['playstation'] ?></td>
+                    <td><?php echo $jogos['nintendo'] ?></td>
+                    <td><?php echo $jogos['pc'] ?></td>
+                    <td><a class="botao-editar" href="editar.php?id=<?php echo $jogos['id'] ?>">Editar</a></td>
                     <td>
                         <form>
-                        <a href="excluir.php?id=<?php echo $produtos['id'] ?>">
+                        <a href="excluir.php?id=<?php echo $jogos['id'] ?>">
                         <input type="button" class="botao-excluir" value="excluir">
                         </a>
                         </form>
