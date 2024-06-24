@@ -18,14 +18,14 @@
         include "conexao.php";
         $sql = "select * from tb_pi where id = $id";
         $resultado = mysqli_query($conexao, $sql);
-        while($jogo = mysqli_fetch_assoc($resultado)){
-            $nome = $jogo['nome'];
-            $descricao = $jogo['descricao'];
-            $banner = $jogo['banner'];
-            $xbox = $jogo['xbox'];
-            $playstation = $jogo['playstation'];
-            $nintendo = $jogo['nintendo'];
-            $pc = $jogo['pc'];
+        while($jogos = mysqli_fetch_assoc($resultado)){
+            $nome = $jogos['nome'];
+            $descricao = $jogos['descricao'];
+            $banner = $jogos['banner'];
+            $xbox = $jogos['xbox'];
+            $playstation = $jogos['playstation'];
+            $nintendo = $jogos['nintendo'];
+            $pc = $jogos['pc'];
         }
         ?>
 
