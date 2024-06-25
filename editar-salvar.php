@@ -4,23 +4,19 @@ $pasta = "img/";
 $id = $_GET['id'];
 $nome = $_POST['nome'];
 $descricao = $_POST['descricao'];
-$xbox = $_POST['xbox'];
-$playstation = $_POST['playstation'];
-$nintendo = $_POST['nintendo'];
-$pc = $_POST['pc'];
+$xbox = $_POST['xbox'] ?? "";
+$playstation = $_POST['playstation'] ?? "";
+$nintendo = $_POST['nintendo'] ?? "";
+$pc = $_POST['pc'] ?? "";
 
 $banner = $_FILES["banner"]["name"];
-$tempname = $_FILES["banner"]["tmp_name"];
-$pasta = "./img" . $banner;
+$tempname = move_uploaded_file($_FILES["banner"]["tmp_name"], $pasta.$banner);
 
 include "conexao.php";
 
 
-$sql = "update tb_pi set nome = '$nome', descricao = '$descricao', xbox = '$xbox', playstation = '$playstation', nintendo = '$nintendo', pc = '$pc' banner = '$banner' where id= $id ";
+$sql = "update tb_pi set nome = '$nome', descricao = '$descricao', xbox = '$xbox', playstation = '$playstation', nintendo = '$nintendo', pc = '$pc', banner = '$banner' where id= $id ";
 
-if($xbox == ""){
-
-}
 
 
 $resultado = mysqli_query($conexao, $sql);

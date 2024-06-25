@@ -18,7 +18,7 @@
                     <th>Nome</th>
                     <th>Banner</th>
                     <th colspan= "4">Plataformas</th>
-                    <th colspan= "3">Ações</th>
+                    <th colspan= "2">Ações</th>
                 </tr>
             </thead>
         
@@ -32,16 +32,40 @@
             ?>
                 <tr>
                     <td><?php echo $jogos['nome'] ?></td>
-                    <td><?php echo $jogos['banner'] ?></td>
-                    <td><?php echo $jogos['xbox'] ?></td>
-                    <td><?php echo $jogos['playstation'] ?></td>
-                    <td><?php echo $jogos['nintendo'] ?></td>
-                    <td><?php echo $jogos['pc'] ?></td>
+                    <td><img src="img/<?php echo $jogos['banner'] ?>" width="150"></td>
+                    <td>
+                    <?php if($jogos['xbox']){ ?>
+                        <img src="img/xbox.png" width="50">
+                    <?php }else{ ?>
+                        <img src="">
+                    <?php } ?>
+                    </td>
+                    <td>
+                    <?php if($jogos['playstation']){ ?>
+                        <img src="img/playstation.png" width="50">
+                    <?php }else{ ?>
+                        <img src="">
+                    <?php } ?>
+                    </td>
+                    <td>
+                    <?php if($jogos['nintendo']){ ?>
+                        <img src="img/nintendo.png" width="50">
+                    <?php }else{ ?>
+                        <img src="">
+                    <?php } ?>
+                    </td>
+                    <td>
+                    <?php if($jogos['pc']){ ?>
+                        <img src="img/pc.png" width="50">
+                    <?php }else{ ?>
+                        <img src="">
+                    <?php } ?>
+                    </td>
                     <td><a class="botao-editar" href="editar.php?id=<?php echo $jogos['id'] ?>">Editar</a></td>
                     <td>
                         <form>
                         <a href="excluir.php?id=<?php echo $jogos['id'] ?>">
-                        <input type="button" class="botao-excluir" value="excluir">
+                        <input type="button" class="botao-excluir" value="Excluir">
                         </a>
                         </form>
                     </td>
@@ -53,6 +77,7 @@
 
         </tbody>
         </table>
+        <br>
         <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
         
     </section>

@@ -8,8 +8,7 @@ $nintendo = $_POST['nintendo'];
 $pc = $_POST['pc'];
 
 $banner = $_FILES["banner"]["name"];
-$tempname = $_FILES["banner"]["tmp_name"];
-$pasta = "./img" . $banner;
+$tempname = move_uploaded_file($_FILES["banner"]["tmp_name"], $pasta.$banner);
 
 
 include "conexao.php";
