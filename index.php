@@ -1,5 +1,5 @@
 <?php include "cabecalho.php" ?>
-
+<br>
 <h1>Joguinhos e Games</h1>
 
 <p>Este site é focado em fazer as pessoas sairem da sua zona de conforto e testarem jogos diferentes <br>do que elas estão acostumados e talvez proporcionar uma experiencia incrivel a elas.</p>
