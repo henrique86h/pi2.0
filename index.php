@@ -9,7 +9,7 @@
 
 <div class="jogos">
     <div class="card-jogos">
-        <a href="">
+        <a href="jogo.php">
             <img src="imagens/death stranding.webp" alt="">
         <p>Death Stranding</p>
     </a>
