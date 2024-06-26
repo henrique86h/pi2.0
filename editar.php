@@ -14,6 +14,7 @@
         $playstation = "";
         $nintendo = "";
         $pc = "";
+        $trailer = "";
 
         include "conexao.php";
         $sql = "select * from tb_pi where id = $id";
@@ -26,14 +27,19 @@
             $playstation = $jogos['playstation'];
             $nintendo = $jogos['nintendo'];
             $pc = $jogos['pc'];
+            $trailer = $jogos['trailer'];
         }
         ?>
 
         <form method="post" enctype="multipart/form-data" action="editar-salvar.php?id=<?php echo $id ?>">
 
-        <label for="nome">Nome</label>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome de um jogo" value="<?php echo $nome ?>" required>
 
-                <input type="text" id="nome" name="nome" placeholder="Nome de um jogo" value="<?php echo $nome ?>" required>
+
+            <label for="trailer">Link do Trailer</label>
+            <input type="text" id="trailer" name="trailer" value="<?php echo $trailer ?>" placeholder="Digite o link script">
+
                 <div class="container-plataformas">
                     <div>
                         <label for="xbox">
@@ -96,7 +102,6 @@
 
         </section>
     </main>
-</body>
 
 
 

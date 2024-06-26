@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22/06/2024 às 02:59
+-- Tempo de geração: 26/06/2024 às 03:22
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -35,20 +35,25 @@ CREATE TABLE `tb_pi` (
   `xbox` varchar(1000) NOT NULL,
   `playstation` varchar(1000) NOT NULL,
   `nintendo` varchar(1000) NOT NULL,
-  `pc` varchar(1000) NOT NULL
+  `pc` varchar(1000) NOT NULL,
+  `trailer` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tb_pi`
 --
 
-INSERT INTO `tb_pi` (`id`, `nome`, `descricao`, `banner`, `xbox`, `playstation`, `nintendo`, `pc`) VALUES
-(1, 'Fortnite', 'Um jogo que ja foi bom, mas agr esta uma merda', 'https://static.wikia.nocookie.net/fortnite/images/d/d5/The_Wastelanders_%28Full%29_-_Loading_Screen_-_Fortnite.png/revision/latest/scale-to-width-down/1000?cb=20240524182251', '', '', '', ''),
-(2, '', '', '', '', '', '', ''),
-(3, 'fgcjc', 'fgjfj', '', '', '', '', ''),
-(4, 'drhfnxf', 'dddddddd', '', 'xbox', '', 'nintendo', ''),
-(5, 'aaaa', 'fffffffff', 'puma.jpg', '', 'playstation', 'nintendo', ''),
-(6, 'ppppppppp', 'pppppppppppppp', 'adidas.png', '', '', '', 'pc');
+INSERT INTO `tb_pi` (`id`, `nome`, `descricao`, `banner`, `xbox`, `playstation`, `nintendo`, `pc`, `trailer`) VALUES
+(1, 'Fortnite', 'Um jogo que ja foi bom, mas agr esta uma merda', '', '', '', '', '', '<iframe width='),
+(2, '', '', '', '', '', '', '', ''),
+(3, 'fgcjc', 'fgjfj', '', '', '', '', '', ''),
+(4, 'drhfnxf', 'dddddddd', '', '', 'xbox', '', '', ''),
+(5, 'aaaa', 'fffffffff', 'puma.jpg', '', 'playstation', 'nintendo', '', ''),
+(6, 'ppppppppp', 'pppppppppppppp', 'adidas.png', '', '', '', 'pc', ''),
+(7, 'pokemon guto edition', 'jogo do guto', '', 'xbox', '', '', '', ''),
+(8, 'fsx', 'sg', 'puma.jpg', '', '', '', 'pc', ''),
+(9, 'ftg', 'dfg', 'adidas.png', '', '', '', '', ''),
+(10, 'hhh', 'a', 'puma.jpg', '', 'playstation', '', '', '');
 
 --
 -- Índices para tabelas despejadas
@@ -68,7 +73,7 @@ ALTER TABLE `tb_pi`
 -- AUTO_INCREMENT de tabela `tb_pi`
 --
 ALTER TABLE `tb_pi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

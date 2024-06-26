@@ -8,6 +8,10 @@
 
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome de um jogo" required>
+
+                <label for="trailer">Link do Trailer</label>
+                <input type="text" id="trailer" name="trailer" placeholder="Digite o link script">
+
                 <div class="container-plataformas">
                     <div>
                         <label for="xbox">
@@ -45,7 +49,6 @@
 
         </section>
     </main>
-</body>
 
 
 <?php include "rodape.php" ?>
