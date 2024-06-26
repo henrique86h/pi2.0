@@ -6,15 +6,15 @@ $xbox = $_POST['xbox'];
 $playstation = $_POST['playstation'];
 $nintendo = $_POST['nintendo'];
 $pc = $_POST['pc'];
+$trailer = $_POST['trailer'];
 
 $banner = $_FILES["banner"]["name"];
-$tempname = $_FILES["banner"]["tmp_name"];
-$pasta = "./img" . $banner;
+$tempname = move_uploaded_file($_FILES["banner"]["tmp_name"], $pasta.$banner);
 
 
 include "conexao.php";
 
-$sql = "insert into tb_pi (nome, descricao, xbox, playstation, nintendo, pc, banner) values('$nome', '$descricao', '$xbox', '$playstation', '$nintendo', '$pc', '$banner')";
+$sql = "insert into tb_pi (nome, descricao, xbox, playstation, nintendo, pc, banner, trailer) values('$nome', '$descricao', '$xbox', '$playstation', '$nintendo', '$pc', '$banner', '$trailer')";
     
 
 $resultado = mysqli_query($conexao, $sql);
