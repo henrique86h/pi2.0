@@ -8,12 +8,61 @@
 <br>
 
 <div class="jogos">
+<?php
+    
+    include "conexao.php";
+
+    $sql = "select * from tb_pi order by rand()";
+
+    $resultado = mysqli_query($conexao, $sql);
+
+    while($jogos = mysqli_fetch_assoc($resultado)): 
+    ?>
+
     <div class="card-jogos">
-        <a href="jogo.php">
-            <img src="imagens/death stranding.webp" alt="">
-        <p>Death Stranding</p>
+        <a href="jogo.php?id=<?php echo $jogos['id'] ?>">
+        <img src="img/<?php echo $jogos['banner'] ?>" width="100%";>
+        <p><?php echo $jogos['nome'] ?></p>
+    <div class="row">
+            <?php if($jogos['xbox']){ ?>
+        <div class="col">
+            
+                <img src="img/xbox.png ?>" width="40">
+            </div>
+            <?php }else{ ?>
+                
+            <?php } ?>
+        <?php if($jogos['playstation']){ ?>
+        <div class="col">
+            
+                <img src="img/playstation.png" width="40">
+                </div>
+            <?php }else{ ?>
+                
+            <?php } ?>
+        
+        <?php if($jogos['nintendo']){ ?>
+        <div class="col">
+            
+                <img src="img/nintendo.png" width="40">
+                </div>
+            <?php }else{ ?>
+                
+            <?php } ?>
+       
+        <?php if($jogos['pc']){ ?>
+        <div class="col">
+            
+                <img src="img/pc.png" width="40">
+                </div>
+            <?php }else{ ?>
+                
+            <?php } ?>
+       
+    </div>
     </a>
     </div>
+    <?php endwhile;?>
 </div>
 
 <?php include "rodape.php" ?>
