@@ -17,6 +17,7 @@
     $resultado = mysqli_query($conexao, $sql);
 
     while($jogos = mysqli_fetch_assoc($resultado)): 
+        
     ?>
 
     <div class="card-jogos">
