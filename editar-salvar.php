@@ -16,7 +16,7 @@ $tempname = move_uploaded_file($_FILES["banner"]["tmp_name"], $pasta.$banner);
 include "conexao.php";
 
 
-$sql = "update tb_pi set nome = '$nome', descricao = '$descricao', xbox = '$xbox', playstation = '$playstation', nintendo = '$nintendo', pc = '$pc', banner = '$banner', trailer = '$trailer' where id= $id ";
+$sql = "update tb_pi set nome = '$nome', descricao = '$descricao', xbox = '$xbox', playstation = '$playstation', nintendo = '$nintendo', pc = '$pc', trailer = '$trailer', banner = '$banner'  where id= $id ";
 
 
 
