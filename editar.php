@@ -45,9 +45,9 @@
                         <label for="xbox">
 
                             <?php if($xbox == 'xbox'){ ?>
-                                <input type="checkbox" id="xbox" name="playstation" value="xbox" checked>
+                                <input type="checkbox" id="xbox" name="xbox" value="xbox" checked>
                             <?php }else{ ?>
-                                <input type="checkbox" id="playstation" name="xbox" value="xbox">
+                                <input type="checkbox" id="xbox" name="xbox" value="xbox">
                             <?php } ?>
 
                     <img src="img/xbox.png" width=40></label>
@@ -92,7 +92,7 @@
                 <br>
 
                 <label for="banner">Banner do jogo</label>
-                <input type="file" name="banner" names="banner" accept="image/*" id="banner" placeholder="Banner">
+                <input type="file" name="banner" accept="image/png, image/jpg, image/jpeg" value="img/<?php echo $banner ?>" id="banner" required>
                 <img src="img/<?php echo $banner ?>">
 
                 <br>
