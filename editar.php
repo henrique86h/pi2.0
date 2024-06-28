@@ -38,7 +38,7 @@
 
 
             <label for="trailer">Link do Trailer</label>
-            <input type="text" id="trailer" name="trailer" value="<?php echo $trailer ?>" placeholder="Digite o link script">
+            <input type="text" id="trailer" name="trailer" value=<?php echo $trailer ?> placeholder="Digite o link script">
 
                 <div class="container-plataformas">
                     <div>

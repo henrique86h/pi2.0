@@ -21,7 +21,7 @@
 
 <h3>Trailer</h3>
 
-<?php echo $jogos['trailer'] ?>
+<iframe> <?php echo $jogos['trailer'] ?></iframe>
 
 
     
