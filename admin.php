@@ -4,6 +4,9 @@
 <body>
 <main>
 
+    <body onload="slide1()">
+        <img id="a"></a>
+    </body>
 
     <section class="container-admin">
         <table>
@@ -74,6 +77,7 @@
         <br>
         <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
         
+        <script src="carrossel.js"></script>
     </section>
 </main>   
 
