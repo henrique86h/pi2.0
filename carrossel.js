@@ -1,14 +1,19 @@
-function slide1(){
-    document.getElementById('a').src="img/puma.jpg";
-    setTimeout("slide2()", 2000)
-}
+let carrosselIndex = 0;
+mostrarCarrossel();
 
-function slide2(){
-    document.getElementById('a').src="img/nike.jpg";
-    setTimeout("slide3()", 2000)
-}
-
-function slide3(){
-    document.getElementById('a').src="img/xbox.png";
-    setTimeout("slide1()", 2000)
+function mostrarCarrossel() {
+    let i;
+    let slides = document.getElementsByClassName("meuCarrossel");
+    let bolinhas = document.getElementsByClassName("bola");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    carrosselIndex++;
+    if (carrosselIndex > slides.length) {carrosselIndex = 1}
+    for (i = 0; i < bolinhas.length; i++) {
+        bolinhas[i].className = bolinhas[i].className.replace(" ativo", "");
+    }
+    slides[carrosselIndex-1].style.display = "block";
+    bolinhas[carrosselIndex-1].className += " ativo";
+    setTimeout(mostrarCarrossel, 2000);
 }

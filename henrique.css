@@ -7,3 +7,30 @@
   .container-admin{
     background-color: rgb(141, 90, 141);
   }
+
+  .mostrarCarrossel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slides-carrossel {
+    display: none;
+  }
+
+  .ativo {
+    background-color: rgb(58, 226, 43);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .imagemCarrossel {
+    vertical-align: middle;
+  }

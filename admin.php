@@ -4,10 +4,20 @@
 <body>
 <main>
 
-    <body onload="slide1()">
-        <img id="a"></a>
-    </body>
+    <div class="container-carrossel">
 
+        <div class="slides-carrossel fade">
+            <img class="imagemCarrossel" src="img/fortnite.png" width="100%">
+        </div>
+        <div class="slides-carrossel fade">
+            <img class="imagemCarrossel" src="img/rocketleague.jpeg" width="100%">
+        </div>
+        <div class="slides-carrossel fade">
+            <img class="imagemCarrossel" src="img/puma.jpg" width="100%">
+        </div>
+
+    </div>
+   
     <section class="container-admin">
         <table>
             <thead>
