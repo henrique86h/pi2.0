@@ -1,22 +1,8 @@
 <?php include "cabecalho.php" ?>
     <title>Admin - Juegos</title>
-</head>
-<body>
 <main>
 
-    <div class="container-carrossel">
-
-        <div class="slides-carrossel fade">
-            <img class="imagemCarrossel" src="img/fortnite.png" width="100%">
-        </div>
-        <div class="slides-carrossel fade">
-            <img class="imagemCarrossel" src="img/rocketleague.jpeg" width="100%">
-        </div>
-        <div class="slides-carrossel fade">
-            <img class="imagemCarrossel" src="img/puma.jpg" width="100%">
-        </div>
-
-    </div>
+    <div id="relogioDigital" class="relogio" onload="mostrarHora()"></div>
    
     <section class="container-admin">
         <table>

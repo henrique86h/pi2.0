@@ -92,7 +92,7 @@
                 <br>
 
                 <label for="banner">Banner do jogo</label>
-                <input type="file" name="banner" accept="image/png, image/jpg, image/jpeg" value="img/<?php echo $banner ?>" id="banner" required>
+                <input type="file" name="banner" accept="image/png, image/jpg, image/jpeg" value="img/<?php echo $banner ?>" id="banner">
                 <img src="img/<?php echo $banner ?>">
 
                 <br>
