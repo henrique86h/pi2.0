@@ -1,8 +1,7 @@
-<?php include "cabecalho" ?>
+<?php include "cabecalho.php" ?>
     <title>Admin - Juegos</title>
-</head>
-<body>
 <main>
+    
     <section class="container-admin">
         <table>
             <thead>
@@ -59,6 +58,7 @@
                         <a href="excluir.php?id=<?php echo $jogos['id'] ?>">
                         <input type="button" class="botao-excluir" value="Excluir">
                         </a>
+
                         </form>
                     </td>
                 </tr>
@@ -72,6 +72,7 @@
         <br>
         <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
         
+        <script src="carrossel.js"></script>
     </section>
 </main>   
 
