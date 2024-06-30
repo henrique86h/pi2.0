@@ -1,9 +1,7 @@
 <?php include "cabecalho.php" ?>
     <title>Admin - Juegos</title>
 <main>
-
-    <div id="relogioDigital" class="relogio" onload="mostrarHora()"></div>
-   
+    
     <section class="container-admin">
         <table>
             <thead>
@@ -60,6 +58,7 @@
                         <a href="excluir.php?id=<?php echo $jogos['id'] ?>">
                         <input type="button" class="botao-excluir" value="Excluir">
                         </a>
+
                         </form>
                     </td>
                 </tr>
