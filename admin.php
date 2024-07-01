@@ -1,6 +1,14 @@
 <?php include "cabecalho.php" ?>
     <title>Admin - Juegos</title>
 <main>
+
+<div class="carrossel">
+        <div class="container-carrossel">
+            <img src="./img/fortnite.png">
+            <img src="./img/adidas.png">
+            <img src="./img/rocketleague.jpeg">
+        </div>
+    </div>
     
     <section class="container-admin">
         <table>
@@ -66,9 +74,11 @@
                 <?php
                 endwhile;
                 ?>
+                
 
         </tbody>
         </table>
+        
         <br>
         <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
         
