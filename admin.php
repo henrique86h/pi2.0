@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="henrique.css">
-    <title>Document</title>
-</head>
-<body>
+<?php include "cabecalho.php"; ?>
     
 
     <title>Admin - Juegos</title>
 <main>
-
-<div class="carrossel">
-        <div class="container-carrossel">
-            <img src="./img/fortnite.png">
-            <img src="./img/adidas.png">
-            <img src="./img/rocketleague.jpeg">
-        </div>
-    </div>
     
     <section class="container-admin">
         <table>
@@ -95,5 +79,5 @@
         <script src="carrossel.js"></script>
     </section>
 </main>   
-</body>
-</html>
+
+<?php include "rodape.php"; ?>
