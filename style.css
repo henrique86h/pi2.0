@@ -1,8 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url("img/fundo_pi.png");
     width: 100%;
 }
+
+.centro {
+    background-color: #393E46;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    color: #EEEEEE;
+    padding: 30px 40px;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 13px;
+  }
 
 footer{
     bottom: 0;

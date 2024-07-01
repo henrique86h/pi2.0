@@ -1,5 +1,5 @@
 <?php include "cabecalho.php" ?>
-
+<div class="centro">
 <h1>Joguinhos e Games</h1>
 
 <p>Este site é focado em fazer as pessoas sairem da sua zona de conforto e testarem jogos diferentes <br>do que elas estão acostumados e talvez proporcionar uma experiencia nova a elas.</p>
@@ -64,6 +64,7 @@
     </a>
     </div>
     <?php endwhile;?>
+</div>
 </div>
 
 <?php include "rodape.php" ?>
