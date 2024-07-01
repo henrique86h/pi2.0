@@ -22,7 +22,7 @@ function mostrarHora(){
     document.getElementById("relogioDigital").innerText = hora;
     document.getElementById("relogioDigital").textContent = hora;
     
-    setTimeout(showTime, 1000);
+    setTimeout(mostrarHora, 1000);
     
 }
 

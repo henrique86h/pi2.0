@@ -1,7 +1,7 @@
 <?php include "cabecalho.php" ?>
 <title>Juegos - Editar Jogo</title>
 
-<body>
+<body class="tela-editar">
     <main>
         <section class="container-adicionar">
 
@@ -33,21 +33,27 @@
 
         <form method="post" enctype="multipart/form-data" action="editar-salvar.php?id=<?php echo $id ?>">
 
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome de um jogo" value="<?php echo $nome ?>" required>
-
-
+        <div class="row mb-3"></div>
+            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome de um jogo" value="<?php echo $nome ?>" required>
+                </div>
+        </div>
+        <div class="row mb-3"></div>
             <label for="trailer">Link do Trailer</label>
-            <input type="text" id="trailer" name="trailer" value="<?php echo $trailer ?>" placeholder="Digite o link do video">
-
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="trailer" name="trailer" value="<?php echo $trailer ?>" placeholder="Digite o link do video">
+                </div>
+        </div>
+        <br>
                 <div class="container-plataformas">
                     <div>
                         <label for="xbox">
 
                             <?php if($xbox == 'xbox'){ ?>
-                                <input type="checkbox" id="xbox" name="xbox" value="xbox" checked>
+                                <input class="form-check-input" type="checkbox" id="xbox" name="xbox" value="xbox" checked>
                             <?php }else{ ?>
-                                <input type="checkbox" id="xbox" name="xbox" value="xbox">
+                                <input class="form-check-input" type="checkbox" id="xbox" name="xbox" value="xbox">
                             <?php } ?>
 
                     <img src="img/xbox.png" width=40></label>
@@ -56,9 +62,9 @@
                         <label for="playstation">        
 
                                 <?php if($playstation == 'playstation'){ ?>
-                                    <input type="checkbox" id="playstation" name="playstation" value="playstation" checked>
+                                    <input class="form-check-input" type="checkbox" id="playstation" name="playstation" value="playstation" checked>
                                 <?php }else{ ?>
-                                    <input type="checkbox" id="playstation" name="playstation" value="playstation">
+                                    <input class="form-check-input" type="checkbox" id="playstation" name="playstation" value="playstation">
                                 <?php } ?>
 
                     <img src="img/playstation.png" width=40></label>
@@ -67,9 +73,9 @@
                         <label for="nintendo">
 
                             <?php if($nintendo == 'nintendo'){ ?>
-                                <input type="checkbox" id="nintendo" name="nintendo" value="nintendo" checked>
+                                <input class="form-check-input" type="checkbox" id="nintendo" name="nintendo" value="nintendo" checked>
                             <?php }else{ ?>
-                                <input type="checkbox" id="nintendo" name="nintendo" value="nintendo">
+                                <input class="form-check-input" type="checkbox" id="nintendo" name="nintendo" value="nintendo">
                             <?php } ?>
 
                     <img src="img/nintendo.png" width=40></label>
@@ -78,26 +84,34 @@
                         <label for="pc">
                         
                         <?php if($pc == 'pc'){ ?>
-                            <input type="checkbox" id="pc" name="pc" value="pc" checked>
+                            <input class="form-check-input" type="checkbox" id="pc" name="pc" value="pc" checked>
                         <?php }else{ ?>
-                            <input type="checkbox" id="pc" name="pc" value="pc">
+                            <input class="form-check-input" type="checkbox" id="pc" name="pc" value="pc">
                         <?php } ?>
 
                     <img src="img/pc.png" width=40></label>
                     </div>
                 </div>
-                <label for="descricao">Descrição</label>
-                <input type="text" id="descricao" name="descricao" placeholder="Digite uma descrição" value="<?php echo $descricao ?>" >
+                <br>
+                <div class="row mb-3">
+                    <label for="descricao">Descrição</label>
+                        <div class="col-sm-10"> 
+                            <input class="form-control" type="text" id="descricao" name="descricao" placeholder="Digite uma descrição" value="<?php echo $descricao ?>" >
+                        </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="banner">Banner do jogo</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="file" name="banner" accept="image/png, image/jpg, image/jpeg" value="img/<?php echo $banner ?>" id="banner">
+                            <br><br>
+                            <img width="500px" src="img/<?php echo $banner ?>">
+                        </div>
+                </div>
 
                 <br>
-
-                <label for="banner">Banner do jogo</label>
-                <input type="file" name="banner" accept="image/png, image/jpg, image/jpeg" value="img/<?php echo $banner ?>" id="banner">
-                <img src="img/<?php echo $banner ?>">
-
-                <br>
-
+                <div class="editar">
                 <input type="submit" name="editar" class="botao-adicionar" value="Editar jogo">
+                </div>
         </form>
 
         </section>

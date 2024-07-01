@@ -3,6 +3,9 @@
 
     <title>Admin - Juegos</title>
 <main>
+<div class="adicionar">
+        <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
+    </div>
     
     <section class="container-admin">
         <table>
@@ -15,7 +18,6 @@
                 </tr>
             </thead>
         
-        <tbody>
             <?php
             include "conexao.php";
             $sql = "select * from tb_pi";
@@ -23,6 +25,7 @@
             
             while ($jogos = mysqli_fetch_assoc($resultado)):
             ?>
+            <tbody>
                 <tr>
                     <td><?php echo $jogos['nome'] ?></td>
                     <td><img src="img/<?php echo $jogos['banner'] ?>" width="150"></td>
@@ -56,28 +59,19 @@
                     </td>
                     <td><a class="botao-editar" href="editar.php?id=<?php echo $jogos['id'] ?>">Editar</a></td>
                     <td>
-                        <form>
                         <a href="excluir.php?id=<?php echo $jogos['id'] ?>">
                         <input type="button" class="botao-excluir" value="Excluir">
                         </a>
-
-                        </form>
                     </td>
                 </tr>
+            </tbody>
 
                 <?php
                 endwhile;
                 ?>
-                
 
-        </tbody>
         </table>
-        
-        <br>
-        <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
-        
-        <script src="carrossel.js"></script>
-    </section>
+        </section>
 </main>   
 
 <?php include "rodape.php"; ?>
