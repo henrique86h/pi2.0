@@ -1,8 +1,19 @@
 
   .container-admin{
-    border: 1px solid #020202; 
+    padding: 30px;
     background-color: #212121;
     color: #e4d6d6;
+  }
+
+  .container-admin img {
+    background-color: #EEEEEE;
+    padding: 1px;
+    border-radius: 10px;
+  }
+  .container-admin .imgPc {
+    background-color: #EEEEEE;
+    padding: 5px;
+    border-radius: 10px;
   }
 
   .relogio {
@@ -63,6 +74,7 @@ table td{
 }
 
 .botao-adicionar {
+  padding: 10px;
   background-color: #32E0C4;
   font-weight: 600;
   border: 20px;
@@ -70,9 +82,10 @@ table td{
   color: #020202;
 }
 .adicionar {
+  background-color: #212121;
   display: flex;
   justify-content: center;
-  padding-top: 7px;
+  padding-top: 40px;
   padding-bottom: 10px;
 }
 
@@ -81,6 +94,20 @@ table td{
   margin-bottom: 30px;
 }
 
-.tela-editar {
+.container-adicionar {
+  padding-left: 100px;
+  background-color: #212121;
+  color: #EEEEEE;
+  font-weight: bold;
+}
+
+.corpo {
+  background-color: #212121;
+}
+
+.plataformas img {
+  padding: 10px;
   background-color: #EEEEEE;
 }
+
+
