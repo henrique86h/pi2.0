@@ -2,6 +2,7 @@
 <title>Juegos - Editar Jogo</title>
     <body class="corpo">
     <main>
+        <br>
         <section class="container-adicionar">
 
         <?php
@@ -32,18 +33,15 @@
 
         <form method="post" enctype="multipart/form-data" action="editar-salvar.php?id=<?php echo $id ?>">
 
-        <div class="row mb-3"></div>
-            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
-                <div class="col-sm-10">
+            <label for="nome">Nome</label>
+                <div class="col-sm-6">
                     <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome de um jogo" value="<?php echo $nome ?>" required>
                 </div>
-        </div>
-        <div class="row mb-3"></div>
+                <br>
             <label for="trailer">Link do Trailer</label>
-                <div class="col-sm-10">
+                <div class="col-sm-6">
                     <input class="form-control" type="text" id="trailer" name="trailer" value="<?php echo $trailer ?>" placeholder="Digite o link do video">
                 </div>
-        </div>
         <br>
                 <div class="container-plataformas">
                     <div class="plataformas">
@@ -95,20 +93,17 @@
                     </div>
                 </div>
                 <br>
-                <div class="row mb-3">
                     <label for="descricao">Descrição</label>
-                        <div class="col-sm-10"> 
+                        <div class="col-sm-6"> 
                             <input class="form-control" type="text" id="descricao" name="descricao" placeholder="Digite uma descrição" value="<?php echo $descricao ?>" >
                         </div>
-                </div>
-                <div class="row mb-3">
+                        <br>
                     <label for="banner">Banner do jogo</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-6">
                             <input class="form-control" type="file" name="banner" accept="image/png, image/jpg, image/jpeg" value="img/<?php echo $banner ?>" id="banner">
                             <br><br>
                             <img width="500px" src="img/<?php echo $banner ?>">
                         </div>
-                </div>
 
                 <br>
                 <div class="editar">
