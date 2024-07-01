@@ -1,4 +1,6 @@
-<?php include "cabecalho.php" ?>
+<?php include "cabecalho.php"; ?>
+    
+
     <title>Admin - Juegos</title>
 <main>
     
@@ -66,9 +68,11 @@
                 <?php
                 endwhile;
                 ?>
+                
 
         </tbody>
         </table>
+        
         <br>
         <a class="botao-adicionar" href="adicionar.php">Adicionar Jogo</a>
         
@@ -76,4 +80,4 @@
     </section>
 </main>   
 
-<?php include "rodape.php" ?>
+<?php include "rodape.php"; ?>
