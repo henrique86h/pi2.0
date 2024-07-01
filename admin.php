@@ -52,7 +52,7 @@
                     </td>
                     <td>
                     <?php if($jogos['pc']){ ?>
-                        <img src="img/pc.png" width="50">
+                        <img class="imgPc" src="img/pc.png" width="50">
                     <?php }else{ ?>
                         <img src="">
                     <?php } ?>

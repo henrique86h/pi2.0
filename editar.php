@@ -1,7 +1,6 @@
 <?php include "cabecalho.php" ?>
 <title>Juegos - Editar Jogo</title>
-
-<body class="tela-editar">
+    <body class="corpo">
     <main>
         <section class="container-adicionar">
 
@@ -47,7 +46,7 @@
         </div>
         <br>
                 <div class="container-plataformas">
-                    <div>
+                    <div class="plataformas">
                         <label for="xbox">
 
                             <?php if($xbox == 'xbox'){ ?>
@@ -56,9 +55,10 @@
                                 <input class="form-check-input" type="checkbox" id="xbox" name="xbox" value="xbox">
                             <?php } ?>
 
-                    <img src="img/xbox.png" width=40></label>
+                    <img src="img/xbox.png" width=60></label>
                     </div>
-                    <div>
+                    <br>
+                    <div class="plataformas">
                         <label for="playstation">        
 
                                 <?php if($playstation == 'playstation'){ ?>
@@ -67,9 +67,10 @@
                                     <input class="form-check-input" type="checkbox" id="playstation" name="playstation" value="playstation">
                                 <?php } ?>
 
-                    <img src="img/playstation.png" width=40></label>
+                    <img src="img/playstation.png" width=60></label>
                     </div>
-                    <div>
+                    <br>
+                    <div class="plataformas">
                         <label for="nintendo">
 
                             <?php if($nintendo == 'nintendo'){ ?>
@@ -78,9 +79,10 @@
                                 <input class="form-check-input" type="checkbox" id="nintendo" name="nintendo" value="nintendo">
                             <?php } ?>
 
-                    <img src="img/nintendo.png" width=40></label>
+                    <img src="img/nintendo.png" width=60></label>
                     </div>
-                    <div>
+                    <br>
+                    <div class="plataformas">
                         <label for="pc">
                         
                         <?php if($pc == 'pc'){ ?>
@@ -89,7 +91,7 @@
                             <input class="form-check-input" type="checkbox" id="pc" name="pc" value="pc">
                         <?php } ?>
 
-                    <img src="img/pc.png" width=40></label>
+                    <img src="img/pc.png" width=60></label>
                     </div>
                 </div>
                 <br>
@@ -116,7 +118,7 @@
 
         </section>
     </main>
-
+    </body>
 
 
 
