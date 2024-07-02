@@ -1,11 +1,12 @@
 <?php include "cabecalho.php" ?>
 <div class="centro">
+
 <h1>Joguinhos e Games</h1>
 
 <p>Este site é focado em fazer as pessoas sairem da sua zona de conforto e testarem jogos diferentes <br>do que elas estão acostumados e talvez proporcionar uma experiencia nova a elas.</p>
 
-<h3>jogos, games e juegos</h3>
-<br>
+<h3>Jogos, games e juegos</h3>
+<br><br>
 
 <div class="jogos">
 <?php

@@ -9,12 +9,11 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
     color: #EEEEEE;
-    padding: 30px 40px;
-    display:flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1200px;
     margin: 0 auto;
-    border-radius: 13px;
+    margin-top: 60px;
   }
 
 footer{
@@ -66,6 +65,10 @@ footer{
 .banner{
     width: 100%;
     height: auto;
+}
+
+.plataformas-jogo{
+    width: 300px;
 }
 
 
