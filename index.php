@@ -1,9 +1,15 @@
 <?php include "cabecalho.php" ?>
 <div class="centro">
 
+<br>
+
 <h1>Joguinhos e Games</h1>
 
-<p>Este site é focado em fazer as pessoas sairem da sua zona de conforto e testarem jogos diferentes <br>do que elas estão acostumados e talvez proporcionar uma experiencia nova a elas.</p>
+<br>
+
+<p>Este site é focado em fazer as pessoas sairem da sua zona de conforto e testarem jogos diferentes <br>do que estão acostumados e proporcionar uma experiência nova.</p>
+
+<br>
 
 <h3>Jogos, games e juegos</h3>
 <br><br>
@@ -24,7 +30,7 @@
     <div class="card-jogos">
         <a href="jogo.php?id=<?php echo $jogos['id'] ?>">
         <img src="img/<?php echo $jogos['banner'] ?>" width="100%";>
-        <p><?php echo $jogos['nome'] ?></p>
+        <h5><?php echo $jogos['nome'] ?></h5>
     <div class="row">
             <?php if($jogos['xbox']){ ?>
         <div class="col">
@@ -66,6 +72,9 @@
     </div>
     <?php endwhile;?>
 </div>
+
+<br><br>
+
 </div>
 
 <?php include "rodape.php" ?>
