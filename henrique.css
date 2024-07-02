@@ -101,14 +101,14 @@ table td{
 
 .editar {
   display: flex;
-  margin-bottom: 30px;
 }
 
 .container-adicionar {
-  padding-left: 100px;
+  padding: 40px;
   background-color: #212121;
   color: #EEEEEE;
   font-weight: bold;
+  margin: 40px;
 }
 
 .corpo {
