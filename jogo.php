@@ -11,13 +11,19 @@
     
 ?>
 
-<h1><?php echo $jogos['nome'] ?></h1>       
+<br>
+
+<h1><?php echo $jogos['nome'] ?></h1> 
+
+<br>
 
 <img class="banner" src="img/<?php echo $jogos['banner'] ?>">
 
 <br><br>
 
 <p><?php echo $jogos['descricao'] ?></p>
+
+<br>
 
 <h3>Trailer</h3>
 
