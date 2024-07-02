@@ -29,14 +29,14 @@ table {
 
 table th{
   padding: 11px;
-  background-color: #0D7377;
+  background-color: #BF1363;
   font-weight: bold;
   font-size: 18px;
   padding: 8px;
 }
 
 table tr{
-  border: 1px solid #EEEEEE;
+  border: 3px solid #EEEEEE;
 }
 
 table td{
@@ -45,18 +45,18 @@ table td{
   padding: 8px;
 }
 .botao-editar {
-  background-color: #073b3d;
-    color: #333B1E;
-    font-weight: 600;
+  background-color: #159ba0;
+  color: #333B1E;
+  font-weight: 600;
 }
 
 .botao-excluir {
-  background-color: #68231a;
+  background-color: #c02121;
   font-weight: 600;
   border-color: #EEEEEE;
 }
 
-.botao-editar, .botao-excluir, .botao-adicionar{
+.botao-editar, .botao-excluir, .botao-adicionar, .btnEditar{
   padding: 3px 10px;
   border-radius: 10px;
   color: #EEEEEE;
@@ -66,21 +66,31 @@ table td{
 }
 
 .botao-editar:hover {
-  filter: saturate(500%);
+  filter: saturate(400%);
 }
 
-.botao-excluir:hover, .botao-adicionar:hover{
-  filter: saturate(150%);
+.botao-excluir:hover, .botao-adicionar:hover, .btnEditar:hover{
+  filter: saturate(300%);
 }
 
 .botao-adicionar {
   padding: 10px;
-  background-color: #32E0C4;
+  background-color: #1bbcc2;
   font-weight: 600;
   border: 20px;
   border-color: #EEEEEE;
   color: #020202;
 }
+
+.btnEditar {
+  padding: 10px;
+  background-color: #BF1363;
+  font-weight: 600;
+  border: 20px;
+  border-color: #EEEEEE;
+  color: #020202;
+}
+
 .adicionar {
   background-color: #212121;
   display: flex;
@@ -103,11 +113,11 @@ table td{
 
 .corpo {
   background-color: #212121;
+  padding: 10px;
 }
 
 .plataformas img {
+  border-radius: 10px;
   padding: 10px;
   background-color: #EEEEEE;
 }
-
-

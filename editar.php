@@ -107,8 +107,9 @@
 
                 <br>
                 <div class="editar">
-                <input type="submit" name="editar" class="botao-adicionar" value="Editar jogo">
+                <input type="submit" name="editar" class="btnEditar" value="Editar jogo">
                 </div>
+                <br>
         </form>
 
         </section>
