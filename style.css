@@ -28,7 +28,6 @@ footer{
     margin-bottom: -10px;
 }
 
-/* Estilos para exibir os cards lado a lado */
 @media (min-width: 768px) {
 .jogos{
     display: flex;
@@ -48,7 +47,7 @@ footer{
     margin-bottom: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 300px; /* Largura inicial dos cards */
+    width: 300px; 
 }
 
 .card-jogos img{
