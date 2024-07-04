@@ -15,7 +15,7 @@
     <header>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Joguinhos TI 22</a>
+            <a class="navbar-brand" href="#"></a>
             <!-- se retirar o onload ele para de atualizar em tempo real -->
             <div id="relogioDigital" class="relogio" onload="mostrarHora()"></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
