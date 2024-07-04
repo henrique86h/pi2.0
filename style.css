@@ -27,11 +27,6 @@ footer{
     margin-bottom: -10px;
 }
 
-<<<<<<< Updated upstream
-
-=======
-@media (min-width: 768px) {
->>>>>>> Stashed changes
 .jogos{
     display: flex;
     flex-wrap: wrap;
@@ -50,11 +45,7 @@ footer{
     margin-bottom: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
-<<<<<<< Updated upstream
-    width: 300px; 
-=======
-    width: 300px;
->>>>>>> Stashed changes
+
 }
 
 .card-jogos img{
