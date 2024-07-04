@@ -28,7 +28,7 @@ footer{
     margin-bottom: -10px;
 }
 
-@media (min-width: 768px) {
+
 .jogos{
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@ footer{
     .card-jogos {
         margin: 0 10px 20px;
     }
-}
+
 
 .card-jogos{
     text-align: center;
