@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     margin-top: 60px;
     border-radius: 5px;
-    background-image: linear-gradient(to right, rgba(0, 255, 255), rgb(255, 0, 255));
+    background-image: linear-gradient(to right, rgba(0, 255, 255), rgb(0, 0, 0));
   }
 
 footer{
@@ -24,8 +24,10 @@ footer{
     background-color: black;
     color: white;
     padding: 10px 20px;
+    text-align: center;
     margin-bottom: -10px;
 }
+
 
 .jogos{
     display: flex;
@@ -45,7 +47,7 @@ footer{
     margin-bottom: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
-
+    width: 300px; 
 }
 
 .card-jogos img{
