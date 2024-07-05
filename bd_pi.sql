@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/06/2024 às 03:22
+-- Tempo de geração: 05/07/2024 às 02:26
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -44,16 +44,21 @@ CREATE TABLE `tb_pi` (
 --
 
 INSERT INTO `tb_pi` (`id`, `nome`, `descricao`, `banner`, `xbox`, `playstation`, `nintendo`, `pc`, `trailer`) VALUES
-(1, 'Fortnite', 'Um jogo que ja foi bom, mas agr esta uma merda', '', '', '', '', '', '<iframe width='),
-(2, '', '', '', '', '', '', '', ''),
-(3, 'fgcjc', 'fgjfj', '', '', '', '', '', ''),
-(4, 'drhfnxf', 'dddddddd', '', '', 'xbox', '', '', ''),
-(5, 'aaaa', 'fffffffff', 'puma.jpg', '', 'playstation', 'nintendo', '', ''),
-(6, 'ppppppppp', 'pppppppppppppp', 'adidas.png', '', '', '', 'pc', ''),
-(7, 'pokemon guto edition', 'jogo do guto', '', 'xbox', '', '', '', ''),
-(8, 'fsx', 'sg', 'puma.jpg', '', '', '', 'pc', ''),
-(9, 'ftg', 'dfg', 'adidas.png', '', '', '', '', ''),
-(10, 'hhh', 'a', 'puma.jpg', '', 'playstation', '', '', '');
+(11, 'The Last of Us 2', 'The Last of Us  é um jogo que conta uma historia sobre amor, confiança, ódio e vingança, com uma trama, personagens. Com detalhes incríveis o jogo impressiona com seus gráficos e jogabilidade.  ', '1jc13gwmn0n.jpg', '', 'playstation', '', 'pc', 'https://www.youtube.com/embed/7ksH7-9vWZ0?si=ew6bF2GrvzRdO6PN'),
+(12, 'Elden Ring', 'Sous like', 'elden ring.jpg', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/E3Huy2cdih0?si=seRk07_RsXtwg0lh'),
+(13, 'Death Stranding', 'Death Stranding, mais conhecido como \"walk simulator\"', 'death_stranding.jpg', '', 'playstation', '', 'pc', 'https://www.youtube.com/embed/oBtvax0jI4g?si=dM45DX0YAA20bo0s'),
+(14, 'Dead Space 2', '', 'dead-space-2.jpg', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/z7Qy_4sWs3I?si=DjSw5lcsbmEzqH1x'),
+(15, 'Red Dead Redenption 2', '', 'red-dead-redemption-2-hero-banner-03-ps4-us-07jun18.webp', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/gmA6MrX81z4?si=Qk-v_MgMsQeMCuh6'),
+(16, 'Far Cry Primal', '', 'far-cry-primal.jpg', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/H3uYzQA_h18?si=JUK1EL4AINx5gHGR'),
+(17, 'Call Of Duty Black Ops 2', '', 'COD-BO-2.jpg', 'xbox', 'playstation', 'nintendo', 'pc', 'https://www.youtube.com/embed/x3tedlWs1XY?si=twNdtyBkSwScZB5A'),
+(18, 'Metal Gear Rising Revengeance', '', 'Metal Gear Rising.jpg', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/EMCkbDnaTDM?si=-xUZKgUHFbEZxjCj'),
+(19, 'Tony Hawk’s™ Pro Skater™ 1 and 2', '', 'Tony hawks.jpg', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/awVubQVhtrE?si=h8V0QMdTTicXuFNs'),
+(20, 'Call Of Duty Vanguard', '', 'VGD_SEE_THEM_RISE.jpg', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/OQ1CwPhE8KQ?si=TIZYuj6klElU1wpi'),
+(21, 'Grand Theft Auto V ', '', 'Grand-theft-auto-v-banner.webp', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/QkkoHAzjnUs?si=fdWR_L9adb3D-mfV'),
+(22, 'UNDERTALE', '', 'UNDERTALE.jfif', 'xbox', 'playstation', 'nintendo', 'pc', 'https://www.youtube.com/embed/1Hojv0m3TqA?si=vKlLcqGI7OzMuRGn'),
+(23, 'Assassins Creed Rogue', '', 'AC Rogue.jfif', 'xbox', 'playstation', 'nintendo', 'pc', 'https://www.youtube.com/embed/7c9e_LUGHwo?si=pWb9vb0MBVh7LTcD'),
+(24, 'TEKKEN 7', '', 'TEKKEN 7.png', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/kKLCwDg2JLA?si=4mU8QFZ68nwXTvBp'),
+(25, 'The Witcher 3: Wild Hunt', '', 'The witcher.jfif', 'xbox', 'playstation', '', 'pc', 'https://www.youtube.com/embed/c0i88t0Kacs?si=oDkdrLn9z0svTXU5');
 
 --
 -- Índices para tabelas despejadas
@@ -73,7 +78,7 @@ ALTER TABLE `tb_pi`
 -- AUTO_INCREMENT de tabela `tb_pi`
 --
 ALTER TABLE `tb_pi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
